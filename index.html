@@ -19,14 +19,35 @@
             padding: 50px 0;
             min-height: 100vh;
         }
-	.spacer {
-	    padding-top: 20px; /* Adjust the value as needed */
-  }
+        .top-bar {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: calc(100% - 40px); /* Adjust width to leave space for scrollbar */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            position: static;
+            margin-right: 20px;
+        }
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 5px 15px;
+            border-radius: 20px;
+            background: rgba(99, 99, 99, 0.8); /* Updated color */
+            transition: background 0.3s, color 0.3s;
+        }
+        .top-bar a:hover {
+            background: rgba(99, 99, 99, 1); /* Solid color on hover */
+            color: #fff;
+        }
         .container {
             text-align: center;
             padding: 50px;
             max-width: 800px;
-            margin: auto;
+            margin: 80px auto 0 auto; /* Adjust for top-bar height */
             background: rgba(0, 0, 0, 0.5);
             border-radius: 10px;
         }
@@ -70,16 +91,26 @@
         }
         .smaller-text {
             font-size: 0.8em;
-            color: #ccc;
+            color: #8B0000;
             margin-top: -20px;
         }
     </style>
 </head>
+
+
+
 <body>
+    <div class="top-bar">
+        <a href="index.html">Main Page</a>
+        <div style="margin-right: 20px;"> <!-- Added margin-right to move buttons away from scrollbar -->
+            <a href="Commission-info.html">Commission Page</a>
+            <a href="TOS.html">TOS</a>
+        </div>
+    </div>
     <div class="overlay">
         <div class="container">
             <h1>Uh oh man's website</h1>
-            <img src="Resources/VRChat_2024-05-19_14-37-10.239_3840x2160.png" alt="Profile Picture" class="profile-pic">
+            <img src="Resources/uhohmanpfp.png" alt="Profile Picture" class="profile-pic">
             <h2>Kash Scott</h2>
             <p>He/Him<br>Just another random person who is just trying to live</p>
             
@@ -92,7 +123,14 @@
             <a href="commission-info.html" class="button">Commission Info</a>
             
             <div class="line"></div>
-            
+
+            <h2>Shop Store</h2>
+            <p>I do have a Gumroad, but i dont have much of anything on there.<br>But i do plan on making things there so you can buy things from me..<br>just dont know when ╮(╯∀╰)╭</p>
+ <div class="links">
+                <a href="https://store.uhohman.com/" target="_blank">Gumroad</a>
+
+            <div class="line"></div>
+
             <h2>Contacts</h2>
             <p>These are the ways you can contact me.<br>I'm on Discord most of the time, so you may have more luck on that.</p>
             <div class="links">
